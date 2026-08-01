@@ -6,39 +6,26 @@ chapter: false
 pre: " <b> 4. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** for your report, including this warning.
-{{% /notice %}}
-
-> In this section, you should list and describe in detail the events you have participated in during your internship or work experience.  
-> 
-> Each event should be presented in the format Event 1, Event 2, Event 3…, along with the following details:
-> * Event name
-> * Date and time
-> * Location (if applicable)
-> * Your role in the event (attendee, event support, speaker, etc.)
-> * A brief description of the event’s content and main activities
-> * Outcomes or value gained (lessons learned, new skills, contribution to the team/project)
-> * This listing helps demonstrate your actual participation as well as the soft skills and experience you have gained from each event.
-
-During my internship, I participated in two events. Each one was a memorable experience that provided new, interesting, and useful knowledge, along with gifts and wonderful moments.
-
-### [Event 1](4.1-Event1/)  
-&emsp;**Event Name:** GenAI-powered App-DB Modernization workshop  
-
-&emsp;**Date & Time:** 09:00, August 13, 2025  
-
-&emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
-
-&emsp;**Role:** Attendee  
+During my internship in the **First Cloud AI Journey (FCAJ)** program, I had the privilege of participating in two major events at the AWS Vietnam office. These were invaluable experiences that strengthened my technical knowledge, provided real-world insights from expert speakers, and expanded my professional network with fellow interns.
 
 ---
 
-### [Event 2](4.2-Event2/)  
-&emsp;**Event Name:** GenAI-powered App-DB Modernization workshop  
+### [Event 1 - Gameshow Cloud Architect (Qualifying Round)](4.1-Event1/)
 
-&emsp;**Date & Time:** 09:00, August 13, 2025  
+* **Event Title:** Cloud Architect Workshop (Gameshow Cloud Architect - Qualifying Round)
+* **Date & Time:** 09:00 - 12:30, June 20, 2026
+* **Location:** AWS Vietnam Office, 26th Floor, Bitexco Financial Tower, 02 Hai Trieu St, Dist 1, HCMC
+* **Role:** Intern Attendee & Direct Observer
+* **Brief Description & Key Activities:** A head-to-head live quiz competition featuring 8 teams of FCAJ interns solving 10 scenario-based questions on AWS cloud infrastructure and architecture, utilizing 2 strategic wildcards (*Safety Play* & *Double Down*).
+* **Outcomes & Values Gained:** Systematized Cloud Architecture knowledge, developed risk assessment mindset in software design, and enhanced quick problem-solving and teamwork capabilities under time pressure.
 
-&emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
+---
 
-&emsp;**Role:** Attendee  
+### [Event 2 - Gameshow Finals & AWS Tech Sharing Session](4.2-Event2/)
+
+* **Event Title:** Gameshow Cloud Architect Finals & Tech Sharing Session
+* **Date & Time:** 09:00 - 12:30, July 11, 2026
+* **Location:** AWS Vietnam Office, 26th Floor, Bitexco Financial Tower, 02 Hai Trieu St, Dist 1, HCMC
+* **Role:** Intern Attendee & Direct Observer
+* **Brief Description & Key Activities:** A thrilling Finals match between team KLKAT and team Ngu Dai Hiep (resulting in a victory for KLKAT), followed by 3 technical keynote presentations: Mr. Thinh (*Securing Your Web Apps With AWS Security Agent*), Mr. Hung (*SLA, Monitoring & Day-in-the-Life of Cloud/DevOps Engineer*), and Mr. Huy (*Inside The Exam: AWS Cloud Practitioner*).
+* **Outcomes & Values Gained:** Mastered proactive web application security solutions, learned best practices for setting up CloudWatch monitoring systems, and gained a clear roadmap and exam strategy to prepare for the AWS Cloud Practitioner certification.

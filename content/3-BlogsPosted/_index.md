@@ -6,17 +6,14 @@ chapter: false
 pre: " <b> 3. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
+###  [Blog 1 - BUILDING COMPREHENSIVE AI AGENTS WITH AMAZON BEDROCK AGENTCORE](3.1-Blog1/)
+![Amazon Bedrock AgentCore Thumbnail](/images/3-BlogsPosted/3.1-Blog1/thumbnail.png)
+This blog introduces building comprehensive AI agents with Amazon Bedrock AgentCore, addressing the limitations of standalone AI models by leveraging multi-tiered knowledge (Organizational, Web, Paid Knowledge) and establishing continuous learning alongside governance & guardrails.
 
-This section will list and introduce the blogs you have posted to [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj). For example:
+###  [Blog 2 - FROM PDFS TO INSIGHTS: ARCHITECTING AN INTELLIGENT DOCUMENT PROCESSING PIPELINE WITH AWS GENERATIVE AI](3.2-Blog2/)
+![Intelligent Document Processing Thumbnail](/images/3-BlogsPosted/3.2-Blog2/thumbnail.png)
+This blog presents an intelligent document processing pipeline architecture based on Amazon Bedrock Data Automation (BDA) and Amazon Bedrock AgentCore Runtime, enabling automated extraction of multimodal insights from complex PDFs and documents into structured data.
 
-###  [Blog 1 - SESSION POLICIES IN AMAZON EKS POD IDENTITY](3.1-Blog1/)
-This blog introduces the newly added session policies feature in Amazon EKS Pod Identity, which allows you to narrow IAM permissions flexibly and precisely for each pod without needing to create multiple separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
-
-###  [Blog 2 - ...](3.2-Blog2/)
-This blog introduces the newly added session policies feature in Amazon EKS Pod Identity, which allows you to narrow IAM permissions flexibly and precisely for each pod without needing to create multiple separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
-
-###  [Blog 3 - ...](3.3-Blog3/)
-This blog introduces the newly added session policies feature in Amazon EKS Pod Identity, which allows you to narrow IAM permissions flexibly and precisely for each pod without needing to create multiple separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
+###  [Blog 3 - SECURING AI AGENTS WITH POLICY IN AMAZON BEDROCK AGENTCORE](3.3-Blog3/)
+![Secure AI Agents Thumbnail](/images/3-BlogsPosted/3.3-Blog3/thumbnail.png)
+This blog highlights separating security boundaries completely from agent application code in Amazon Bedrock AgentCore using Cedar authorization language, Policy Engine, and Gateway to enforce fine-grained control over tools and data access.

@@ -5,11 +5,6 @@ weight: 7
 chapter: false
 pre: " <b> 7. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
->Tại đây bạn có thể tự do đóng góp ý kiến cá nhân về những trải nghiệm khi tham gia chương trình First Cloud AI Journey, giúp team FCAJ cải thiện những vấn đề còn thiếu sót dựa trên các hạng mục sau:
 
 ### Đánh giá chung
 
@@ -33,12 +28,24 @@ Công ty có hỗ trợ phụ cấp thực tập và tạo điều kiện về t
 
 
 ### Một số câu hỏi khác
-- Điều bạn **hài lòng nhất** trong thời gian thực tập?  
-- Điều bạn nghĩ công ty **cần cải thiện** cho các thực tập sinh sau?  
-- Nếu giới thiệu cho bạn bè, bạn có **khuyên họ thực tập ở đây không**? Vì sao?  
+
+* **Điều bạn hài lòng nhất trong thời gian thực tập?**  
+  Điều mình hài lòng nhất chính là cơ hội được tiếp cận và thực hành trực tiếp với các công nghệ đám mây tiên tiến của AWS (đặc biệt là các dịch vụ Generative AI như Amazon Bedrock, Bedrock AgentCore, BDA). Bên cạnh đó, sự tận tình hướng dẫn của các anh/chị mentor và môi trường làm việc cởi mở, chuyên nghiệp tại AWS Vietnam đã giúp mình trưởng thành rất nhiều cả về tư duy lẫn kỹ năng kỹ thuật.
+
+* **Điều bạn nghĩ công ty cần cải thiện cho các thực tập sinh sau?**  
+  Chương trình thực tập đã rất tốt và bài bản. Tuy nhiên, nếu có thêm các buổi hands-on workshop tổng quan về bức tranh kiến trúc hệ thống (End-to-End System Architecture) ngay từ tuần đầu tiên, các bạn thực tập sinh khóa sau sẽ dễ dàng hình dung lộ trình và bắt nhịp với dự án nhanh hơn nữa.
+
+* **Nếu giới thiệu cho bạn bè, bạn có khuyên họ thực tập ở đây không? Vì sao?**  
+  Chắc chắn là **CÓ**. Đây là môi trường thực tập tuyệt vời cho những ai muốn theo đuổi mảng Cloud và AI. Chương trình First Cloud AI Journey không chỉ cung cấp kiến thức thực chiến chuẩn AWS mà còn rèn luyện tác phong làm việc chuẩn quốc tế, giúp sinh viên bứt phá nhanh chóng so với lý thuyết tại trường đại học.
 
 
 ### Đề xuất & mong muốn
-- Bạn có đề xuất gì để cải thiện trải nghiệm trong kỳ thực tập?  
-- Bạn có muốn tiếp tục chương trình này trong tương lai?
-- Góp ý khác (tự do chia sẻ):
+
+* **Bạn có đề xuất gì để cải thiện trải nghiệm trong kỳ thực tập?**  
+  Đề xuất tổ chức thêm các buổi chia sẻ chuyên đề ngắn (Tech Talk / Knowledge Sharing) định kỳ hàng tuần giữa các nhóm thực tập sinh để mọi người trao đổi bài học thực tế và học hỏi lẫn nhau về các mảng công nghệ đang triển khai.
+
+* **Bạn có muốn tiếp tục chương trình này trong tương lai?**  
+  Rất **mong muốn**. Mình hy vọng có cơ hội tiếp tục đồng hành cùng chương trình First Cloud AI Journey hoặc ứng tuyển các vị trí chính thức của AWS trong tương lai để tiếp tục cống hiến và phát triển sự nghiệp.
+
+* **Góp ý khác (tự do chia sẻ):**  
+  Xin chân thành cảm ơn Ban tổ chức chương trình First Cloud AI Journey (FCAJ), các anh/chị Mentor và đội ngũ AWS Vietnam đã tạo điều kiện thuận lợi và đồng hành cùng mình trong suốt kỳ thực tập vô cùng ý nghĩa và đáng nhớ này!

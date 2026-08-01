@@ -1,126 +1,94 @@
 ---
-title: "Event 2"
+title: "Event 2: Gameshow Finals & AWS Tech Sharing Session"
 date: 2024-01-01
 weight: 1
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
+* **Event Title:** Gameshow Cloud Architect Finals & Tech Sharing Session
+* **Date & Time:** 09:00 - 12:30, July 11, 2026
+* **Location:** AWS Vietnam Office, 26th Floor, Bitexco Financial Tower, 02 Hai Trieu St, Dist 1, HCMC
+* **Role:** Intern Attendee & Direct Observer
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+---
 
 ### Event Objectives
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+- **Witness the Thrilling Finals:** Watch the high-stakes final showdown between the top two teams to determine the champion of Gameshow Cloud Architect.
+- **Enhance Security Awareness:** Explore modern web application security solutions powered by AWS Security Agent.
+- **Deepen Operational Understanding:** Master core concepts of Service Level Agreements (SLA), critical monitoring metrics, and the daily workflow of a Cloud/DevOps Engineer.
+- **AWS Certification Roadmap:** Learn practical strategies, study methods, and exam tips to prepare for the AWS Certified Cloud Practitioner exam.
 
-### Speakers
+---
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+### Speaker List
+
+- **Mr. Thinh** - Cloud Security Engineer (*Topic: Securing Your Web Apps With AWS Security Agent*)
+- **Mr. Hung** - Cloud Operations / DevOps Engineer (*Topic: SLA and Monitoring - From SLA to Monitoring what really matters*)
+- **Mr. Huy** - Cloud Practitioner Specialist (*Topic: Inside The Exam: AWS Cloud Practitioner*)
+
+---
 
 ### Key Highlights
 
-#### Identifying the drawbacks of legacy application architecture
+#### Gameshow Cloud Architect Finals: KLKAT vs Ngu Dai Hiep
+- The Grand Final featured an intense matchup between the tournament's top two teams: **KLKAT** and **Ngu Dai Hiep**.
+- Both teams went head-to-head across challenging cloud architecture scenarios.
+- Tactical wildcard usage and composure under pressure propelled **team KLKAT** to a decisive victory, claiming the Championship title.
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+#### Part 1: Securing Your Web Apps With AWS Security Agent (Mr. Thinh)
+- Introduced automated vulnerability discovery in web applications using AWS Security Agent.
+- Integrating security guardrails into CI/CD pipelines to enforce Shift-Left Security during development phases.
+- Demonstrated rule configuration to automatically block common web exploits (SQL Injection, XSS) and data leakage.
 
-#### Transitioning to modern application architecture – Microservices
+#### Part 2: SLA and Monitoring - From SLA to Monitoring what really matters (Mr. Hung)
+- Clarified distinctions between Service Level Agreements (SLA), Service Level Objectives (SLO), and Service Level Indicators (SLI).
+- Established intelligent alerting strategies focusing on critical metrics directly impacting user experience (Latency, Error Rate, Traffic, Saturation) rather than alert noise.
+- Shared authentic insights into incident management workflows and day-to-day operations of an enterprise Cloud/DevOps Engineer.
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+#### Part 3: Inside The Exam - AWS Cloud Practitioner (Mr. Huy)
+- Deconstructed the AWS Certified Cloud Practitioner (CLF-C02) exam blueprint across 4 key domains (Cloud Concepts, Security, Technology, Billing & Pricing).
+- Outlined efficient self-study roadmaps using official AWS Skill Builder resources and hands-on labs.
+- Shared techniques for navigating tricky scenario questions, exam time management, and answer elimination strategies.
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
-
-#### Domain-Driven Design (DDD)
-
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
-
-#### Event-Driven Architecture
-
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
-
-#### Compute Evolution
-
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
-
-#### Amazon Q Developer
-
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+---
 
 ### Key Takeaways
 
-#### Design Mindset
+- **Proactive Security Mindset:** Understood the necessity of embedding security early in web application development rather than reacting post-incident.
+- **Operational Reality:** Mastered service reliability measurement via SLAs and setting up actionable CloudWatch monitoring systems.
+- **AWS Certification Strategy:** Formulated a clear self-study plan and built confidence to register for the AWS Cloud Practitioner exam.
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
+---
 
-#### Technical Architecture
+### Workplace Applications
 
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
+- **Application Security Auditing:** Reviewed API endpoints and IAM policies in my internship project to enforce Least Privilege principles.
+- **Project Monitoring Setup:** Configured CloudWatch Metrics and Alarms for serverless backend components to track latency and error spikes.
+- **Certification Target Setting:** Structured a weekly study schedule incorporating speaker tips to earn the AWS Cloud Practitioner certification.
 
-#### Modernization Strategy
+---
 
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
+### Personal Event Experiences
 
-### Applying to Work
+Attending Event 2 was an immensely enriching and inspiring experience:
+- **Thrilling Competition:** The final match between KLKAT and Ngu Dai Hiep delivered an electrifying atmosphere with enthusiastic audience cheering.
+- **Practical & Relatable:** Presentations by Mr. Thinh, Mr. Hung, and Mr. Huy directly addressed questions commonly encountered by students entering the Cloud industry.
+- **Learning Motivation:** Industry insights and certification advice provided strong motivation to continue advancing my AWS technical skills.
 
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+---
 
-### Event Experience
+### Event Photo Gallery
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+![Gameshow Cloud Architect Finals between team KLKAT and Ngu Dai Hiep](/images/4-EventParticipated/4.2-Event2/event2_final_match.jpg)
+*Photo: Awards ceremony celebrating the intense Finals match between team KLKAT and team Ngu Dai Hiep.*
 
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
+![Mr. Thinh presenting Securing Your Web Apps With AWS Security Agent](/images/4-EventParticipated/4.2-Event2/event2_speaker_thinh.jpg)
+*Photo: Speaker Mr. Thinh sharing insights on "Securing Your Web Apps With AWS Security Agent".*
 
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
+![Mr. Hung presenting SLA and Monitoring](/images/4-EventParticipated/4.2-Event2/event2_speaker_hung.jpg)
+*Photo: Speaker Mr. Hung discussing SLAs, Monitoring, and daily Cloud/DevOps engineering workflows.*
 
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
-
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
-
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
-
-#### Some event photos
-*Add your event photos here*  
-
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+![Mr. Huy sharing exam tips for AWS Cloud Practitioner](/images/4-EventParticipated/4.2-Event2/event2_speaker_huy.jpg)
+*Photo: Speaker Mr. Huy providing guidance on "Inside The Exam: AWS Cloud Practitioner".*

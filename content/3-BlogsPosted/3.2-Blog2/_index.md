@@ -1,31 +1,40 @@
 ---
-title: "Blog 2"
+title: "Blog 2: FROM PDFS TO INSIGHTS: ARCHITECTING AN INTELLIGENT DOCUMENT PROCESSING PIPELINE WITH AWS GENERATIVE AI"
 date: 2024-01-01
 weight: 1
 chapter: false
 pre: " <b> 3.2. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
-# SESSION POLICIES IN AMAZON EKS POD IDENTITY
+![Intelligent Document Processing Thumbnail](/images/3-BlogsPosted/3.2-Blog2/thumbnail.png)
 
-Amazon EKS Pod Identity has recently added the session policies feature, allowing you to narrow IAM permissions flexibly and precisely for each pod without needing to create many separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
+### 1. Bottlenecks of Traditional OCR
 
-Key points to know:
+Enterprises today process millions of documents daily, ranging from insurance claims and invoices to legal contracts and medical records. While traditional Optical Character Recognition (OCR) solutions can extract raw text, they lack context awareness, relationship understanding, or semantic comprehension of complex documents. This limitation creates manual intervention bottlenecks, inflating processing time and cost while introducing potential human errors.
 
-* A session policy is an inline IAM policy specified when creating or updating a Pod Identity association.
-* Effective permissions = intersection between the IAM role permissions and the session policy → the session policy can only narrow permissions, not expand them.
-* Helps avoid over-permissioning when reusing a single IAM role for multiple workloads with different needs.
-* Supports both same-account and cross-account (via IAM role chaining).
-* Significantly reduces the number of IAM roles that need to be managed, helping avoid hitting IAM quota limits in large clusters.
-* Easily configured through the AWS Management Console, AWS CLI, or AWS SDK when creating an association between a Kubernetes ServiceAccount and an IAM role.
+### 2. Core Solution: Automation with Amazon Bedrock Data Automation (BDA)
 
-This feature is especially useful when you have many applications running on the same IAM role but need different permission restrictions (for example: one pod only reads a specific S3 bucket, another pod only calls certain APIs).
+To overcome these challenges, AWS offers a cost-effective, scalable, intelligent document processing pipeline powered by Amazon Bedrock. At the heart of this solution is Amazon Bedrock Data Automation (BDA) — a managed service providing a unified API experience to automatically extract meaningful insights from multimodal content (documents, images, video, and audio). Unlike conventional OCR, BDA understands document context, automatically delineates logical sections, validates extracted data, and provides confidence scores for accuracy.
 
-...Image...
+### 3. Pipeline Capability Architecture
 
-...Link...
+The solution processes documents through four tightly integrated layers:
 
-...Guide...
+* **Input Processing Layer:** The workflow triggers when users upload documents to Amazon S3. EventBridge and AWS Step Functions coordinate BDA to automatically split large documents (up to 3,000 pages and 500 MB per API call) and classify components into their respective document types.
+* **Extraction and Storage Layer:** Transforms raw content into structured formats. BDA extracts text, table structures, form fields, and analyzes visual elements (charts, diagrams, flowcharts) to generate annotations and structured data. Output data follows standard formats or customizable custom blueprints tailored to specific document types.
+* **Intelligence Layer:** Extracted data feeds into Amazon Bedrock Knowledge Bases paired with Amazon OpenSearch Serverless. This layer maintains vector embeddings for semantic search and Retrieval-Augmented Generation (RAG) across multi-document repositories.
+* **Agentic Coordination Layer:** Strands Agents running on Amazon Bedrock AgentCore Runtime manage end-to-end orchestration. A Coordinator Agent routes tasks to specialized agents (e.g., Market Analysis Agent, Investment Advisory Agent, or External API Agent for real-time third-party data integration).
+
+### 4. Governance, Security, and Cost Optimization
+
+Engineered for secure and economical enterprise-grade operations:
+
+* **Enterprise-Grade Security:** Utilizes AWS KMS keys to encrypt documents and output results, AWS PrivateLink for secure in-VPC API communication, and strict Least Privilege IAM roles.
+* **Cost Optimization:** Features intelligent routing based on document complexity, batch processing, and Amazon S3 lifecycle policies to transition aged files to lower-cost storage tiers.
+* **Scalability:** Leveraging serverless AWS Step Functions and asynchronous processing, the pipeline has proven capability to handle over 50,000 concurrent PDF documents without performance degradation.
+
+---
+
+**References:**
+* [AWS Machine Learning Blog - From PDFs to insights: Architecting an intelligent document processing pipeline with AWS generative AI services](https://aws.amazon.com/blogs/machine-learning/from-pdfs-to-insights-architecting-an-intelligent-document-processing-pipeline-with-aws-generative-ai-services/)
+* [Facebook Post on AWS Study Group FCJ](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2225158074915819/)
