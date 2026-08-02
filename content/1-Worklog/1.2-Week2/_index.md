@@ -1,57 +1,29 @@
 ---
-title: "Week 2 Worklog"
+title: "Worklog Week 2"
 date: 2024-01-01
 weight: 1
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 2 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* In-depth study of serverless compute service **AWS Lambda**: Handler functions, Triggers, Execution Roles, Environment Variables.
+* Research **Amazon API Gateway** (HTTP API & REST API) and Proxy Routing (`/{proxy+}`).
+* Deploy an initial Serverless Backend integration combining API Gateway and AWS Lambda Function.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Tasks Completed This Week:
 
+| Day | Task Description | Start Date | Completion Date | Reference Resource |
+| --- | --- | --- | --- | --- |
+| Mon | - Deep dive into **AWS Lambda** architecture, Stateless Execution mechanics, Pay-as-you-go pricing model, Memory Allocation configuration (128MB to 10GB), and Ephemeral Storage (`/tmp`) <br> - **Hands-on:** Write a basic Python 3.12 Lambda Function via AWS Console, analyzing `event` and `context` object syntax in Handler functions | 06/29/2026 | 06/29/2026 | [Serverless Automation with AWS Lambda](https://cloudjourney.awsstudygroup.com/vi/3-optimize/) |
+| Tue | - Research Lambda access permissions management via **IAM Execution Roles** and configure `AWSLambdaBasicExecutionRole` policy <br> - Learn to configure **Environment Variables** to manage static application parameters without hardcoding in source code <br> - Write JSON event processing logic inside Handler functions and test with sample AWS Console Event payloads | 06/30/2026 | 06/30/2026 | [IAM Policies & Permissions](https://cloudjourney.awsstudygroup.com/vi/3-optimize/) |
+| Wed | - Study **Amazon API Gateway**, comparing feature sets and cost trade-offs between HTTP APIs and REST APIs <br> - Research **Proxy Integration (`/{proxy+}`)**: Enabling API Gateway to forward raw HTTP Requests (headers, query params, body) directly to AWS Lambda for execution | 07/01/2026 | 07/01/2026 | [Build Serverless APIs with API Gateway](https://cloudjourney.awsstudygroup.com/vi/4-modernize/) |
+| Thu | - Provision an Amazon API Gateway (HTTP API) and configure it as a direct Trigger for the AWS Lambda Function <br> - Configure **CORS (Cross-Origin Resource Sharing)** rules on API Gateway to allow secure browser connections from Frontend clients | 07/02/2026 | 07/02/2026 | [Serverless Backend Workshop](https://cloudjourney.awsstudygroup.com/vi/4-modernize/) |
+| Fri | - **Integrated Practice:** Send HTTP requests (GET, POST) via Postman to the API Gateway endpoint URL <br> - Verify request routing -> Lambda execution -> successful JSON response payload delivery while monitoring logs in Amazon CloudWatch Logs | 07/03/2026 | 07/03/2026 | [Monitoring with CloudWatch Logs](https://cloudjourney.awsstudygroup.com/vi/3-optimize/) |
 
-### Week 2 Achievements:
+### Week 2 Outcomes & Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Deeply understood AWS Lambda execution mechanisms and serverless resource management.
+* Mastered Amazon API Gateway and Proxy Routing `/{proxy+}` to receive and forward client HTTP traffic.
+* Successfully built an end-to-end Serverless API Backend (API Gateway -> AWS Lambda).

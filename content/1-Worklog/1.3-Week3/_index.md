@@ -1,57 +1,29 @@
 ---
-title: "Week 3 Worklog"
+title: "Worklog Week 3"
 date: 2024-01-01
 weight: 1
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 3 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Research container image registry service **Amazon ECR (Elastic Container Registry)**.
+* Package FastAPI Backend application into an optimized Docker Container Image for AWS Lambda.
+* Initialize AWS Lambda Function using Docker Container Image from ECR and link with API Gateway.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Tasks Completed This Week:
 
+| Day | Task Description | Start Date | Completion Date | Reference Resource |
+| --- | --- | --- | --- | --- |
+| Mon | - Overview of container registry service **Amazon ECR (Elastic Container Registry)** <br> - **Hands-on:** Provision a Private ECR Repository on AWS Console <br> - Learn Docker CLI authentication command with Amazon ECR via AWS CLI: `aws ecr get-login-password --region <region> | docker login...` | 07/06/2026 | 07/06/2026 | [AWS Container Services](https://cloudjourney.awsstudygroup.com/vi/5-container/) |
+| Tue | - Design and author an optimized `Dockerfile` for FastAPI Backend application <br> - Utilize base image (`public.ecr.aws/lambda/python:3.12`), append dependencies into `requirements.txt`, and configure Lambda Handler entrypoint | 07/07/2026 | 07/07/2026 | [Docker Container Essentials](https://cloudjourney.awsstudygroup.com/vi/3-optimize/) |
+| Wed | - Build Docker Image locally (`docker build -t smartdoc-backend .`) <br> - Tag image targeting ECR URI (`docker tag ...`) and push image to Private ECR Repository <br> - Manage Image Tags, audit layer sizes, and enable Vulnerability Scanning settings on ECR | 07/08/2026 | 07/08/2026 | [Container Services Workshop](https://cloudjourney.awsstudygroup.com/vi/5-container/) |
+| Thu | - Provision a new Lambda Function specifying **Container Image** source from the pushed ECR Repository <br> - Configure Memory Allocation (1024MB), Execution Timeout (30 seconds), and attach appropriate IAM Execution Role for Lambda Container | 07/09/2026 | 07/09/2026 | [Serverless Automation with AWS Lambda](https://cloudjourney.awsstudygroup.com/vi/3-optimize/) |
+| Fri | - **Integrated Practice:** Link API Gateway trigger to newly deployed Lambda Container Image <br> - Execute API endpoint testing from Postman, evaluate Cold Start latency, and measure overall Serverless Container performance | 07/10/2026 | 07/10/2026 | [Build Serverless APIs](https://cloudjourney.awsstudygroup.com/vi/4-modernize/) |
 
-### Week 3 Achievements:
+### Week 3 Outcomes & Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Mastered Docker Container Image management with Amazon ECR (authentication, push, tag, vulnerability scanning).
+* Successfully packaged FastAPI Backend into a lightweight Docker Image optimized for serverless environments.
+* Successfully deployed AWS Lambda Function running from ECR Container Image, fully integrated with API Gateway.

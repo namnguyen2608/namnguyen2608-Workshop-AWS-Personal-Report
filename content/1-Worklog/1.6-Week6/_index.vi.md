@@ -5,54 +5,25 @@ weight: 1
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 6:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tổng hợp kiến thức và kết quả đạt được sau các giai đoạn triển khai Serverless Backend & Bedrock AI Services.
+* Biên soạn nội dung chi tiết các phần báo cáo: Kiến trúc hệ thống, Nhật ký công việc (Worklog 6 tuần), Tự đánh giá và Phản hồi.
+* Định dạng giao diện báo cáo website (Hugo theme), rà soát lỗi chính tả, chuẩn hóa câu từ và nộp Báo cáo tổng kết kỳ thực tập.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Các công việc đã thực hiện:
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Tổng hợp, hệ thống hóa toàn bộ kiến thức kỹ thuật và các kết quả nghiên cứu trong quá trình phát triển dự án SmartDocAI <br> - Phác thảo cấu trúc báo cáo tổng kết kỳ thực tập chương trình First Cloud AI Journey (FCAJ) | 27/07/2026 | 27/07/2026 | [FCJ Workforce Program](https://cloudjourney.awsstudygroup.com/vi/8-fcjworkforce/) |
+| 3 | - Viết nội dung chi tiết phần Nhật ký công việc (Worklog 6 tuần) và Mô tả Kiến trúc hệ thống Serverless Container (Lambda ECR, API Gateway, Bedrock BDA & AgentCore) <br> - Biên soạn các đoạn mã nguồn và sơ đồ minh họa kỹ thuật cho báo cáo | 28/07/2026 | 28/07/2026 | [Hiện đại hóa ứng dụng trên AWS](https://cloudjourney.awsstudygroup.com/vi/4-modernize/) |
+| 4 | - Biên soạn các phần Tự đánh giá bản thân (Self-evaluation) và Phản hồi về chương trình thực tập (Feedback) <br> - Tối ưu hóa giao diện hiển thị website báo cáo Hugo, chỉnh sửa các thẻ meta, tiêu đề và cấu trúc cây thư mục | 29/07/2026 | 29/07/2026 | [Tối ưu hệ thống trên AWS](https://cloudjourney.awsstudygroup.com/vi/3-optimize/) |
+| 5 | - Đóng gói toàn bộ tài liệu kỹ thuật, lưu trữ các file cấu hình chính sách Cedar và mã nguồn ứng dụng <br> - Chuẩn bị slide thuyết trình tổng kết kết quả đạt được trong suốt kỳ thực tập | 30/07/2026 | 30/07/2026 | [FCJ Workforce Program](https://cloudjourney.awsstudygroup.com/vi/8-fcjworkforce/) |
+| 6 | - **Thực hành tổng hợp:** Rà soát lại toàn bộ báo cáo thực tập song ngữ (Việt - Anh), chỉnh sửa câu từ, định dạng Markdown và nộp Báo cáo tổng kết kỳ thực tập chương trình First Cloud AI Journey | 31/07/2026 | 31/07/2026 | [Hành trình đầu tiên lên Mây](https://cloudjourney.awsstudygroup.com/vi/) |
 
 ### Kết quả đạt được tuần 6:
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Hoàn thành biên soạn toàn bộ nội dung Báo cáo tổng kết kỳ thực tập chương trình First Cloud AI Journey.
+* Định dạng và tối ưu hóa thành công giao diện báo cáo website song ngữ (Việt - Anh) trên nền Hugo.
+* Chuẩn bị đầy đủ slide thuyết trình, tài liệu kỹ thuật và nộp báo cáo tổng kết đúng thời hạn.

@@ -5,55 +5,25 @@ weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 1:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Giao lưu, kết nối và làm quen với các thành viên trong chương trình First Cloud AI Journey (FCAJ).
+* Nắm rõ nội quy, quy định làm việc và văn hóa doanh nghiệp tại văn phòng AWS Việt Nam.
+* Cài đặt môi trường phát triển, thiết lập AWS CLI, IAM Credentials và tìm hiểu tổng quan các khái niệm Điện toán đám mây & Serverless.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Các công việc đã thực hiện:
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Giao lưu, kết nối và làm quen với các bạn thực tập sinh trong chương trình First Cloud AI Journey (FCAJ) <br> - Lắng nghe chia sẻ định hướng từ đội ngũ Mentor tại AWS Việt Nam <br> - Nghiên cứu, ghi nhớ và cam kết tuân thủ các quy định bảo mật, văn hóa làm việc chuyên nghiệp và nội quy tại đơn vị thực tập | 22/06/2026 | 22/06/2026 | [FCJ Workforce Program](https://cloudjourney.awsstudygroup.com/vi/8-fcjworkforce/) |
+| 3 | - Tìm hiểu tổng quan kiến thức Điện toán đám mây (Cloud Computing) và xu hướng phát triển ứng dụng Serverless <br> - Phân biệt các mô hình IaaS, PaaS, SaaS và ưu điểm của việc cắt giảm chi phí vận hành với Serverless <br> - Đăng ký, kích hoạt tài khoản AWS và cấu hình giao diện cơ bản trên AWS Management Console | 23/06/2026 | 23/06/2026 | [Khám phá dịch vụ AWS](https://cloudjourney.awsstudygroup.com/vi/1-explore/) |
+| 4 | - Cài đặt công cụ AWS CLI trên hệ điều hành cục bộ <br> - Tạo IAM User, cấp quyền truy cập tối thiểu (Least Privilege) và khởi tạo Access Key / Secret Access Key <br> - **Thực hành:** Cấu hình AWS CLI bằng `aws configure`, kiểm tra kết nối tài khoản bằng các lệnh `aws sts get-caller-identity` và `aws s3 ls` | 24/06/2026 | 24/06/2026 | [AWS CLI & Khám phá dịch vụ](https://cloudjourney.awsstudygroup.com/vi/1-explore/) |
+| 5 | - Khảo sát các dịch vụ Compute cốt lõi trên AWS (EC2, ECS, AWS Lambda) <br> - Phân tích sự khác biệt giữa kiến trúc Container và Serverless Compute <br> - Tham gia phiên họp thảo luận định hướng kỹ thuật tuần đầu tiên cùng Mentor để chốt mục tiêu nghiên cứu | 25/06/2026 | 25/06/2026 | [Khám phá máy chủ ảo AWS](https://cloudjourney.awsstudygroup.com/vi/1-explore/) |
+| 6 | - **Thực hành tổng hợp:** Rà soát lại toàn bộ môi trường phát triển cục bộ, kiểm tra kết nối AWS CLI <br> - Chuẩn bị kế hoạch kỹ thuật chi tiết cho các tuần tiếp theo và viết nhật ký công việc tuần 1 | 26/06/2026 | 26/06/2026 | [Hành trình đầu tiên lên Mây](https://cloudjourney.awsstudygroup.com/vi/) |
 
 ### Kết quả đạt được tuần 1:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Hòa nhập nhanh chóng với không khí làm việc năng động tại AWS Việt Nam và làm quen với các bạn thực tập sinh FCAJ.
+* Hoàn thành thiết lập môi trường phát triển cục bộ và cấu hình thành công AWS CLI với IAM Credentials.
+* Nắm vững các khái niệm cơ bản về Điện toán đám mây, kiến trúc Serverless và sẵn sàng cho các nhiệm vụ kỹ thuật tiếp theo.

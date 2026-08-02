@@ -5,55 +5,25 @@ weight: 1
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 5:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Nghiên cứu môi trường thực thi **Amazon Bedrock AgentCore Runtime** và lập trình Coordinator Agent điều phối các tác vụ AI.
+* Nghiên cứu ngôn ngữ phân quyền **Cedar** và xây dựng chính sách an toàn trong **AgentCore Policy Engine**.
+* Cấu hình **Bedrock Gateway** và các lớp rào cản **Guardrails** để kiểm soát rủi ro và ngăn chặn tấn công tiêm mã (Prompt Injection).
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Các công việc đã thực hiện:
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Tìm hiểu kiến trúc **Amazon Bedrock AgentCore Runtime** – môi trường thực thi và điều phối vòng đời của các AI Agent <br> - **Thực hành:** Lập trình **Coordinator Agent** tiếp nhận yêu cầu từ người dùng, phân tích ý định (intent analysis) và tự động chọn công cụ (tool) xử lý thích hợp | 20/07/2026 | 20/07/2026 | [Dịch vụ AI/ML trên AWS](https://cloudjourney.awsstudygroup.com/vi/7-aimlservice/) |
+| 3 | - Nghiên cứu giải pháp tách biệt hoàn toàn ranh giới bảo mật ra khỏi mã nguồn ứng dụng trong AgentCore <br> - Tìm hiểu cú pháp và cấu trúc của ngôn ngữ ủy quyền **Cedar** (phân biệt các mệnh đề `permit` cho phép và `forbid` cấm tuyệt đối) | 21/07/2026 | 21/07/2026 | [Quản lý quyền hạn với IAM Policies](https://cloudjourney.awsstudygroup.com/vi/3-optimize/) |
+| 4 | - Viết các file chính sách bảo mật bằng ngôn ngữ Cedar trong **Policy Engine** để kiểm soát quyền gọi công cụ (tool invocation) của Agent <br> - Áp dụng kiểm thử chính sách ở chế độ ghi nhật ký (`log-only`) để đánh giá hành vi trước khi chặn thực tế | 22/07/2026 | 22/07/2026 | [IAM Permission Boundaries](https://cloudjourney.awsstudygroup.com/vi/3-optimize/) |
+| 5 | - Cấu hình **Bedrock Gateway** làm chốt chặn trung tâm đánh chặn (intercept) mọi lưu lượng truy cập từ Agent <br> - Tích hợp các rào cản an toàn **Guardrails** để lọc các cụm từ độc hại, ngăn chặn tấn công tiêm mã (Prompt Injection) và bảo vệ dữ liệu nhạy cảm | 23/07/2026 | 23/07/2026 | [Bảo vệ ứng dụng với AWS WAF](https://cloudjourney.awsstudygroup.com/vi/3-optimize/) |
+| 6 | - **Thực hành tổng hợp:** Tiến hành kiểm thử bảo mật tích hợp giữa AgentCore Runtime -> Policy Engine -> Bedrock Gateway <br> - Giả lập các hành vi truy vấn trái phép và xác nhận hệ thống chặn đứng chính xác theo đúng chính sách Cedar đã định nghĩa | 24/07/2026 | 24/07/2026 | [AWS Security Hub & Bảo mật](https://cloudjourney.awsstudygroup.com/vi/3-optimize/) |
 
 ### Kết quả đạt được tuần 5:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Hiểu sâu kiến trúc Amazon Bedrock AgentCore Runtime và lập trình thành công Coordinator Agent điều phối tác vụ thông minh.
+* Thành thạo viết chính sách bảo mật bằng ngôn ngữ Cedar trong Policy Engine, tách biệt hoàn toàn bảo mật khỏi mã nguồn ứng dụng.
+* Thiết lập thành công Bedrock Gateway và Guardrails, đảm bảo AI Agent hoạt động an toàn tuyệt đối cấp doanh nghiệp.

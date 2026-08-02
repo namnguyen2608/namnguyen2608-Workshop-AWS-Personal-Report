@@ -5,55 +5,25 @@ weight: 1
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 4:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Nghiên cứu dịch vụ **Amazon Bedrock Data Automation (BDA)** – giải pháp tự động trích xuất thông tin ngữ cảnh từ tài liệu đa phương thức.
+* Tích hợp BDA API Client vào ứng dụng Lambda Backend để xử lý các tệp tài liệu PDF/DOCX phức tạp.
+* Xây dựng đường ống tự động hóa ép kiểu dữ liệu trích xuất thành định dạng JSON có cấu trúc bằng Custom Blueprints.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Các công việc đã thực hiện:
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Tìm hiểu tổng quan **Amazon Bedrock Data Automation (BDA)** và các tính năng API hợp nhất trích xuất văn bản <br> - **Thực hành:** Khởi tạo BDA Client trong Python SDK (`boto3`) và cấu hình IAM permissions phù hợp để gọi BDA service | 13/07/2026 | 13/07/2026 | [Dịch vụ AI/ML trên AWS](https://cloudjourney.awsstudygroup.com/vi/7-aimlservice/) |
+| 3 | - Viết mô-đun Python xử lý tài liệu đa trang (PDF/DOCX) bằng BDA API (`document_processor.py`) <br> - Nghiên cứu cơ chế tự động nhận diện ranh giới các trang, nhóm các phần nội dung logic và duy trì ngữ cảnh tài liệu mà không cần cắt thủ công | 14/07/2026 | 14/07/2026 | [Tích hợp dịch vụ AI trên AWS](https://cloudjourney.awsstudygroup.com/vi/4-modernize/) |
+| 4 | - Nghiên cứu và thiết lập **Custom Blueprints** trong BDA để định nghĩa rõ cấu trúc dữ liệu đầu ra cần trích xuất <br> - Cấu hình trích xuất tự động các phần tử phức tạp như bảng biểu (tables), trường biểu mẫu (form fields) và định dạng kết quả ra JSON chuẩn | 15/07/2026 | 15/07/2026 | [Hiện đại hóa ứng dụng trên AWS](https://cloudjourney.awsstudygroup.com/vi/4-modernize/) |
+| 5 | - Nhúng luồng gọi BDA API vào các API endpoints của Lambda Backend ECR Container <br> - Đánh giá và kiểm tra chỉ số tin cậy (**Confidence Scores**) do BDA trả về cho từng trường dữ liệu trích xuất để đảm bảo chất lượng dữ liệu | 16/07/2026 | 16/07/2026 | [Xây dựng Microservices trên AWS](https://cloudjourney.awsstudygroup.com/vi/4-modernize/) |
+| 6 | - **Thực hành tổng hợp:** Gửi tài liệu PDF từ Client -> API Gateway -> Lambda ECR Container xử lý -> BDA API trích xuất -> nhận kết quả JSON có cấu trúc hoàn chỉnh | 17/07/2026 | 17/07/2026 | [Tự động hóa phát hành ứng dụng](https://cloudjourney.awsstudygroup.com/vi/4-modernize/) |
 
 ### Kết quả đạt được tuần 4:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Nắm vững nguyên lý hoạt động của Amazon Bedrock Data Automation (BDA) trong xử lý tài liệu thông minh.
+* Tích hợp thành công BDA API vào Lambda Backend, tự động phân tích và trích xuất dữ liệu từ các tài liệu PDF/DOCX đa trang.
+* Áp dụng Custom Blueprints giúp định dạng dữ liệu đầu ra thành chuẩn JSON có cấu trúc với độ chính xác cao.

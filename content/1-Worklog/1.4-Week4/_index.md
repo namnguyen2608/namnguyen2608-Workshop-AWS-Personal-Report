@@ -1,57 +1,29 @@
 ---
-title: "Week 4 Worklog"
+title: "Worklog Week 4"
 date: 2024-01-01
 weight: 1
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 4 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Research **Amazon Bedrock Data Automation (BDA)** — an automated solution for extracting contextual information from multimodal documents.
+* Integrate BDA API Client into the Lambda Backend application to process complex PDF/DOCX document files.
+* Build an automated pipeline formatting extracted document contents into structured JSON schemas using Custom Blueprints.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Tasks Completed This Week:
 
+| Day | Task Description | Start Date | Completion Date | Reference Resource |
+| --- | --- | --- | --- | --- |
+| Mon | - Overview of **Amazon Bedrock Data Automation (BDA)** and unified document extraction APIs <br> - **Hands-on:** Initialize BDA Client using AWS Python SDK (`boto3`) and configure IAM policies for BDA service access | 07/13/2026 | 07/13/2026 | [AWS AI/ML Services](https://cloudjourney.awsstudygroup.com/vi/7-aimlservice/) |
+| Tue | - Author Python document processing module parsing multi-page PDF/DOCX files via BDA API (`document_processor.py`) <br> - Analyze automatic page boundary detection, logical section grouping, and context retention | 07/14/2026 | 07/14/2026 | [Integrating AWS AI Services](https://cloudjourney.awsstudygroup.com/vi/4-modernize/) |
+| Wed | - Research and define **Custom Blueprints** within BDA to specify exact structured output schemas <br> - Configure automated extraction for complex structures such as data tables, form fields, and JSON output formatting | 07/15/2026 | 07/15/2026 | [Modernize Apps on AWS](https://cloudjourney.awsstudygroup.com/vi/4-modernize/) |
+| Thu | - Embed BDA API invocation workflows into Lambda Backend ECR Container API endpoints <br> - Audit **Confidence Scores** returned by BDA for extracted attributes to guarantee data quality standards | 07/16/2026 | 07/16/2026 | [Building Microservices](https://cloudjourney.awsstudygroup.com/vi/4-modernize/) |
+| Fri | - **Integrated Practice:** Upload PDF document from Client -> API Gateway -> Lambda ECR Container -> BDA API, verifying JSON output extraction success | 07/17/2026 | 07/17/2026 | [Release Automation Workshop](https://cloudjourney.awsstudygroup.com/vi/4-modernize/) |
 
-### Week 4 Achievements:
+### Week 4 Outcomes & Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Deeply understood Amazon Bedrock Data Automation (BDA) operations in intelligent document processing.
+* Successfully integrated BDA API into Lambda Backend, automating analysis and extraction of multi-page PDF/DOCX documents.
+* Applied Custom Blueprints to guarantee high-accuracy structured JSON output formatting.

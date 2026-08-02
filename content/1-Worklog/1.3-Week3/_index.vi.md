@@ -5,55 +5,25 @@ weight: 1
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 3:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Nghiên cứu dịch vụ lưu trữ container **Amazon ECR (Elastic Container Registry)**.
+* Đóng gói ứng dụng Backend (FastAPI) thành Docker Container Image chuẩn tối ưu cho AWS Lambda.
+* Khởi tạo AWS Lambda Function từ Docker Image trên ECR và kết nối với API Gateway.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Các công việc đã thực hiện:
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Tìm hiểu tổng quan dịch vụ kho lưu trữ container **Amazon ECR (Elastic Container Registry)** <br> - **Thực hành:** Khởi tạo Private ECR Repository trên AWS Console <br> - Học lệnh xác thực Docker CLI với Amazon ECR thông qua AWS CLI: `aws ecr get-login-password --region <region> | docker login...` | 06/07/2026 | 06/07/2026 | [Các dịch vụ về Container trên AWS](https://cloudjourney.awsstudygroup.com/vi/5-container/) |
+| 3 | - Thiết kế và viết `Dockerfile` chuẩn tối ưu cho ứng dụng FastAPI Backend <br> - Sử dụng hình ảnh cơ sở (`public.ecr.aws/lambda/python:3.12`), thêm các thư viện phụ thuộc vào `requirements.txt` và cấu hình Handler entrypoint cho Lambda | 07/07/2026 | 07/07/2026 | [Sử dụng Container với Docker](https://cloudjourney.awsstudygroup.com/vi/3-optimize/) |
+| 4 | - Thực hiện build Docker Image cục bộ (`docker build -t smartdoc-backend .`) <br> - Gắn tag cho image theo địa chỉ ECR URI (`docker tag ...`) và đẩy (push) image lên Private ECR Repository <br> - Quản lý Image Tags, kiểm tra dung lượng các lớp image (layer size) và bật tính năng Vulnerability Scanning trên ECR | 08/07/2026 | 08/07/2026 | [Container Services Workshop](https://cloudjourney.awsstudygroup.com/vi/5-container/) |
+| 5 | - Khởi tạo Lambda Function mới với tùy chọn chọn nguồn từ **Container Image** stored trong ECR Repository vừa push <br> - Cấu hình dung lượng bộ nhớ (Memory Allocation: 1024MB), Timeout (30 giây) và thiết lập IAM Execution Role phù hợp cho Lambda Container | 09/07/2026 | 09/07/2026 | [Tự động hóa bằng Serverless với AWS Lambda](https://cloudjourney.awsstudygroup.com/vi/3-optimize/) |
+| 6 | - **Thực hành tổng hợp:** Kết nối API Gateway làm trigger cho Lambda Container Image mới triển khai <br> - Thực hiện kiểm thử toàn bộ API endpoints từ Postman, đánh giá thời gian khởi động lạnh (Cold Start latency) và đo lường hiệu năng phản hồi của hệ thống Serverless Container | 10/07/2026 | 10/07/2026 | [Xây dựng API Serverless](https://cloudjourney.awsstudygroup.com/vi/4-modernize/) |
 
 ### Kết quả đạt được tuần 3:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Nắm vững cách quản lý Docker Container Images với Amazon ECR (xác thực, push, tag, scan vulnerabilities).
+* Đóng gói thành công ứng dụng FastAPI Backend thành Docker Image nhỏ gọn, tối ưu cho môi trường serverless.
+* Triển khai thành công AWS Lambda Function chạy từ Container Image trên ECR và kết nối hoàn chỉnh với API Gateway.

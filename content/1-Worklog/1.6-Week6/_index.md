@@ -1,57 +1,29 @@
 ---
-title: "Week 6 Worklog"
+title: "Worklog Week 6"
 date: 2024-01-01
 weight: 1
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 6 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Synthesize knowledge and technical accomplishments from previous implementation phases of Serverless Backend & Bedrock AI Services.
+* Draft detailed report sections: System Architecture, Worklog (6 Weeks), Self-evaluation, and Feedback.
+* Format website report interface (Hugo theme), proofread content, refine wording, and submit the Internship Summary Report.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Tasks Completed This Week:
 
+| Day | Task Description | Start Date | Completion Date | Reference Resource |
+| --- | --- | --- | --- | --- |
+| Mon | - Synthesize and structure technical knowledge and research findings gathered during SmartDocAI project development <br> - Outline the structural framework for the First Cloud AI Journey (FCAJ) internship summary report | 07/27/2026 | 07/27/2026 | [FCJ Workforce Program](https://cloudjourney.awsstudygroup.com/vi/8-fcjworkforce/) |
+| Tue | - Write detailed content for the Worklog section (6 Weeks) and Serverless Container Architecture Description (Lambda ECR, API Gateway, Bedrock BDA & AgentCore) <br> - Compile code snippets and technical diagrams for the report | 07/28/2026 | 07/28/2026 | [Application Modernization on AWS](https://cloudjourney.awsstudygroup.com/vi/4-modernize/) |
+| Wed | - Author Self-evaluation and Internship Feedback report sections <br> - Optimize Hugo report website interface layout, refine meta tags, titles, and directory structure | 07/29/2026 | 07/29/2026 | [System Optimization on AWS](https://cloudjourney.awsstudygroup.com/vi/3-optimize/) |
+| Thu | - Package application codebase, archive Cedar security policy manifests, and deployment documentation <br> - Prepare presentation slides highlighting achievements during the internship | 07/30/2026 | 07/30/2026 | [FCJ Workforce Program](https://cloudjourney.awsstudygroup.com/vi/8-fcjworkforce/) |
+| Fri | - **Integrated Practice:** Review bilingual (Vietnamese - English) internship report drafts, proofread text formatting, and officially submit the final internship report | 07/31/2026 | 07/31/2026 | [First Cloud Journey](https://cloudjourney.awsstudygroup.com/vi/) |
 
-### Week 6 Achievements:
+### Week 6 Outcomes & Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Completed full authoring of the First Cloud AI Journey Internship Summary Report.
+* Successfully formatted and optimized the bilingual (Vietnamese - English) Hugo website report interface.
+* Fully prepared presentation slides, technical documentation, and submitted the final report on schedule.
