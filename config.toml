@@ -1,5 +1,5 @@
 baseURL = "https://namnguyen2608.github.io/namnguyen2608-Workshop-AWS-Personal-Report/"
-relativeURLs = true
+relativeURLs = false
 canonifyURLs = false
 defaultContentLanguage = "en"
 
