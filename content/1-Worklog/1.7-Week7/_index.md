@@ -1,57 +1,33 @@
 ---
-title: "Week 7 Worklog"
+title: "Worklog Week 7"
 date: 2024-01-01
 weight: 1
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 7 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Construct detailed storyboard script, record, and edit video demonstration for the SmartDocAI project.
+* Consolidate, review, and finalize the structural framework of the First Cloud AI Journey (FCAJ) summary report.
+* Standardize bilingual (Vietnamese - English) Worklog entries (7 Weeks) on the Hugo report website.
+* Audit FastAPI Backend codebase, Cedar security policy manifests, and package official internship deliverables.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      | [AWS Culture & Principles](https://aws.amazon.com/careers/culture/) |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | [AWS Services Overview](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html) |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | [AWS CLI Getting Started Guide](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html) |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | [Amazon EC2 User Guide](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html) |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | [Getting Started with Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html) |
+### Tasks Completed This Week:
+
+| Day | Task Description | Start Date | Completion Date | Reference Resource |
+| --- | --- | --- | --- | --- |
+| Mon | - Comprehensive review of all internship report chapters (Chapter 1 to Chapter 4) <br> - **Demo Storyboard Creation:** Map out video demonstration scenes for SmartDocAI (PDF upload flow, BDA automated extraction, Coordinator Agent query execution, and Cedar Security Policy Prompt Injection prevention) | 08/03/2026 | 08/03/2026 | [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) |
+| Tue | - **Video Demo Recording & Editing:** Record project feature video per defined storyboard script; perform post-production editing, voiceover narration illustrating Serverless Container Backend workflows and AWS AI services | 08/04/2026 | 08/04/2026 | [AWS Prescriptive Guidance](https://aws.amazon.com/prescriptive-guidance/) |
+| Wed | - Author and refine detailed 7-Week Worklog entries on the Hugo website following bilingual structure <br> - Optimize daily task tables, append exact completion dates, and attach authoritative reference links | 08/05/2026 | 08/05/2026 | [Hugo Static Site Generator Docs](https://gohugo.io/documentation/) |
+| Thu | - Audit consistency between technical descriptions in the Word report (`.docx`) and Hugo Report guide articles <br> - Embed video demo links into report deliverables, archive FastAPI Backend codebase and Cedar security policy manifests | 08/06/2026 | 08/06/2026 | [AWS Serverless Architecture Center](https://aws.amazon.com/serverless/) |
+| Fri | - **Integrated Practice:** Final audit of bilingual internship report drafts, product video demo, export standard formats, and officially submit the First Cloud AI Journey (FCAJ) internship summary report | 08/07/2026 | 08/07/2026 | [Official AWS Documentation](https://docs.aws.amazon.com/) |
+
+### Week 7 Outcomes & Achievements:
+
+* Completed storyboard drafting, recording, and post-production video editing showcasing full SmartDocAI architecture.
+* Fully completed authoring and auditing for the First Cloud AI Journey (FCAJ) internship summary report.
+* Successfully standardized bilingual 7-Week Worklog entries on the Hugo Report website with authoritative reference links.
+* Archived complete Backend codebase, Cedar policy manifests, video demo assets, presentation slides, and submitted the final internship report on time.
 
 
-### Week 7 Achievements:
-
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...

@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-Trong phần này là nhật ký công việc (Worklog) ghi chép lại toàn bộ quá trình thực tập của em trong chương trình **First Cloud AI Journey (FCAJ)** tại **AWS Việt Nam** kéo dài trong **6 tuần** (từ ngày **22/06/2026 đến ngày 31/07/2026**).
+Trong phần này là nhật ký công việc (Worklog) ghi chép lại toàn bộ quá trình thực tập của em trong chương trình **First Cloud AI Journey (FCAJ)** tại **AWS Việt Nam** kéo dài trong **7 tuần** (từ ngày **22/06/2026 đến ngày 07/08/2026**).
 
 Nội dung các tuần thực tập được tổng hợp như sau:
 
@@ -20,4 +20,6 @@ Nội dung các tuần thực tập được tổng hợp như sau:
 
 **Tuần 5 (20/07/2026 – 24/07/2026):** [Phát triển AI Agent với Amazon Bedrock AgentCore & Ngôn ngữ Bảo mật Cedar](1.5-week5/)
 
-**Tuần 6 (27/07/2026 – 31/07/2026):** [Kiểm thử Tích hợp End-to-End, Tối ưu Hiệu năng & Hoàn thiện Báo cáo](1.6-week6/)
+**Tuần 6 (27/07/2026 – 31/07/2026):** [Kiểm thử Tích hợp End-to-End, Tối ưu Hiệu năng & Thuyết trình Dự án](1.6-week6/)
+
+**Tuần 7 (03/08/2026 – 07/08/2026):** [Hoàn thiện Báo cáo Thực tập, Chuẩn hóa Worklog & Đóng gói Tài liệu](1.7-week7/)
