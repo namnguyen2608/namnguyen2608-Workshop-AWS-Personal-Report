@@ -72,10 +72,10 @@ pre: " <b> 4.2. </b> "
 
 ### Trải Nghiệm Trong Event
 
-Tham gia sự kiện Event 2 là một trải nghiệm trọn vẹn và vô cùng bổ ích đối với em:
+Tham gia sự kiện Event 2 là một trải nghiệm trọn vẹn và vô cùng bổ ích đối với mình:
 - **Hào hứng & Kịch tính:** Trận chung kết giữa KLKAT và Ngũ Đại Hiệp mang lại không khí thi đấu hết sức bùng nổ, sự reo hò cổ vũ nhiệt tình của toàn thể khán phòng.
 - **Thực tế & Gần gũi:** Các bài trình bày từ anh Thịnh, anh Hưng và anh Huy rất thiết thực, giải đáp trực tiếp những thắc mắc mà sinh viên thường gặp phải khi mới bắt đầu tiếp xúc với Cloud và định hướng nghề nghiệp.
-- **Cảm hứng học tập:** Những chia sẻ về kinh nghiệm thi chứng chỉ và thực tế công việc đã truyền thêm nhiều động lực để em tiếp tục nỗ lực học hỏi trên hành trình chinh phục công nghệ AWS.
+- **Cảm hứng học tập:** Những chia sẻ về kinh nghiệm thi chứng chỉ và thực tế công việc đã truyền thêm nhiều động lực để mình tiếp tục nỗ lực học hỏi trên hành trình chinh phục công nghệ AWS.
 
 ---
 

@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 4. </b> "
 ---
 
-Trong quá trình thực tập tại chương trình **First Cloud AI Journey (FCAJ)**, em đã có cơ hội tham gia 2 sự kiện lớn tại văn phòng AWS Việt Nam. Đây là những trải nghiệm vô cùng quý giá giúp em củng cố kiến thức chuyên môn, học hỏi kinh nghiệm thực tế từ các anh/chị diễn giả và mở rộng mối quan hệ với các bạn thực tập sinh.
+Trong quá trình thực tập tại chương trình **First Cloud AI Journey (FCAJ)**, mình đã có cơ hội tham gia 2 sự kiện lớn tại văn phòng AWS Việt Nam. Đây là những trải nghiệm vô cùng quý giá giúp mình củng cố kiến thức chuyên môn, học hỏi kinh nghiệm thực tế từ các anh/chị diễn giả và mở rộng mối quan hệ với các bạn thực tập sinh.
 
 ---
 
