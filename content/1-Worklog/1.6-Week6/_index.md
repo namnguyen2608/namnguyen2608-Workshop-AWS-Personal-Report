@@ -16,11 +16,11 @@ pre: " <b> 1.6. </b> "
 
 | Day | Task Description | Start Date | Completion Date | Reference Resource |
 | --- | --- | --- | --- | --- |
-| Mon | - Synthesize and structure technical knowledge and research findings gathered during SmartDocAI project development <br> - Outline the structural framework for the First Cloud AI Journey (FCAJ) internship summary report | 07/27/2026 | 07/27/2026 | [FCJ Workforce Program](https://cloudjourney.awsstudygroup.com/vi/8-fcjworkforce/) |
-| Tue | - Write detailed content for the Worklog section (6 Weeks) and Serverless Container Architecture Description (Lambda ECR, API Gateway, Bedrock BDA & AgentCore) <br> - Compile code snippets and technical diagrams for the report | 07/28/2026 | 07/28/2026 | [Application Modernization on AWS](https://cloudjourney.awsstudygroup.com/vi/4-modernize/) |
-| Wed | - Author Self-evaluation and Internship Feedback report sections <br> - Optimize Hugo report website interface layout, refine meta tags, titles, and directory structure | 07/29/2026 | 07/29/2026 | [System Optimization on AWS](https://cloudjourney.awsstudygroup.com/vi/3-optimize/) |
-| Thu | - Package application codebase, archive Cedar security policy manifests, and deployment documentation <br> - Prepare presentation slides highlighting achievements during the internship | 07/30/2026 | 07/30/2026 | [FCJ Workforce Program](https://cloudjourney.awsstudygroup.com/vi/8-fcjworkforce/) |
-| Fri | - **Integrated Practice:** Review bilingual (Vietnamese - English) internship report drafts, proofread text formatting, and officially submit the final internship report | 07/31/2026 | 07/31/2026 | [First Cloud Journey](https://cloudjourney.awsstudygroup.com/vi/) |
+| Mon | - Synthesize and structure technical knowledge and research findings gathered during SmartDocAI project development <br> - Outline the structural framework for the First Cloud AI Journey (FCAJ) internship summary report | 07/27/2026 | 07/27/2026 | [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) |
+| Tue | - Write detailed content for the Worklog section (6 Weeks) and Serverless Container Architecture Description (Lambda ECR, API Gateway, Bedrock BDA & AgentCore) <br> - Compile code snippets and technical diagrams for the report | 07/28/2026 | 07/28/2026 | [AWS Serverless Architecture Center](https://aws.amazon.com/serverless/) |
+| Wed | - Author Self-evaluation and Internship Feedback report sections <br> - Optimize Hugo report website interface layout, refine meta tags, titles, and directory structure | 07/29/2026 | 07/29/2026 | [Hugo Static Site Generator Documentation](https://gohugo.io/documentation/) |
+| Thu | - Package application codebase, archive Cedar security policy manifests, and deployment documentation <br> - Prepare presentation slides highlighting achievements during the internship | 07/30/2026 | 07/30/2026 | [AWS Prescriptive Guidance Documentation](https://aws.amazon.com/prescriptive-guidance/) |
+| Fri | - **Integrated Practice:** Review bilingual (Vietnamese - English) internship report drafts, proofread text formatting, and officially submit the final internship report | 07/31/2026 | 07/31/2026 | |
 
 ### Week 6 Outcomes & Achievements:
 
